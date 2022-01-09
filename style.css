@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family : "Public Sans" , sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background:radial-gradient(black, blue);
+    
+}
+
+.grid-conteiner > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0.75);
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.header{
+    grid-area: header;
+    background: radial-gradient(aqua, blue);
+    color: white;
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.navbar {
+    grid-area: navbar;
+    background: radial-gradient(aqua,green);
+    
+}
+
+.navbar-conc{
+    grid-area: navbar;
+    background: radial-gradient(lightblue, orange);
+}
+
+.nav-menu-item-conc{
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    list-style: none;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    background:radial-gradient(blue, cyan);
+    color: white;
+}
+ 
+.sidebar-conc {
+    
+        grid-area: sidebar;
+        background:radial-gradient(white, purple);
+        color: black;
+}
+
+.sidebar-nos{
+    grid-area: sidebar;
+    background:radial-gradient(brown, white);
+}
+
+.sidebar-rio{
+    grid-area: sidebar;
+    background: radial-gradient(rgb(2, 53, 2),green);
+    color: white;
+}
+
+.navbar-nos{
+    grid-area: navbar;
+    background: radial-gradient(lightgreen, rgb(109, 25, 109));
+
+}
+
+.nav-menu-item-nos{
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    list-style: none;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f5f5f5;
+    background-image: url(./img/fondo2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+color: white;
+font-family: cursive;
+
+
+
+}
+
+.main-nos{
+    display: flex;
+    flex-direction: right;
+    flex-direction: column;
+    text-align: left;
+    grid-area: main;
+    background-color: #f5f5f5;
+    background-image: url(./img/fondopagina.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+
+font-family: cursive;
+
+}
+.maincon{
+    grid-area: main;
+    background-color: #f5f5f5;
+    background-image: url(./img/fondo2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+color:white;
+font-family: cursive;
+
+}
+
+.hc{
+    color: white;
+}
+
+.ul-dulce{
+    
+    
+    list-style: none;
+    
+}
+.footer{
+    grid-area: footer;
+    background:radial-gradient(purple, black);
+    color: white;
+    
+    
+
+    
+}
+
+.footer-nos{
+    grid-area: footer;
+    background-color: rgb(119, 119, 8);
+}
+
+.grid-conteiner{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+        "header" 100px
+        "navbar" 50px
+        "main" auto
+        "sidebar" 100px
+        "footer" 100px;
+}
+
+.main-prod{
+    grid-area: main;
+    background-color: #f5f5f5;
+    background-image: url(./img/back6.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+color: white;
+font-family: cursive;
+
+}
+
+
+ .nav-menu-item{
+     font-size: 15px;
+     margin: 0 10px;
+     line-height: 80px;
+     text-transform: uppercase;
+     width: max-content;
+     list-style: none;
+     
+     
+ }
+
+ .nav-menu-link{
+     padding:  8px 12px;
+     border-radius: 30px;
+ }
+
+
+ .nav-menu-link:hover {
+background-color: blue;
+transition: 0.7s;
+color:white;
+ }
+
+ 
+.nav-menu-link-nos:hover {
+background-color: yellow;
+transition: 0.7s;
+color: blue;
+}
+
+.main-sal{
+grid-area: main;
+background-color: #f5f5f5;
+background-image: url(./img/back4.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+width: 100%;
+margin: 0 auto;
+height: 500px;
+color: white;
+font-family: cursive;
+}
+
+.footer-rio{
+    grid-area: footer;
+    background:radial-gradient(brown, purple);
+    color: white;
+}
+
+.footer-sal{
+    grid-area: footer;
+    background:radial-gradient(purple, darkblue);
+    color: white;
+}
+
+.sidebar-sal{
+    grid-area: sidebar;
+    background: radial-gradient(salmon, aqua);
+    color: blue;
+}
+
+
+
+@media (max-width: 768px) {
+    .grid-conteiner{
+        grid-template:
+        "header header" 100px
+        "navbar main" 50px
+        "navbar main"  auto
+        "sidebar sidebar"    auto
+        "footer footer" 100px /
+        150px auto;
+
+    }
+    .sidebar {
+        grid-area: sidebar;
+        background:radial-gradient(blue, black);
+        color:white;
+        }
+}
+
+
+.footer-ask{
+    grid-area: footer;
+    background:radial-gradient(purple, skyblue);
+    color: black;
+}
+
+@media (min-width: 900px) {
+    .grid-conteiner{
+        grid-template:
+        "header header header" 100px
+        "navbar main sidebar"  auto
+        "footer footer footer" 100px /
+        200px    auto  200px;
+        
+    }
+    
+   
+    
+}
+
+@media (max-width: 1024px){
+    .grid-conteiner{
+        grid-template:
+        "header header" 100px
+        "navbar main" 50px
+        "navbar main"  auto
+        "sidebar sidebar"    auto
+        "footer footer" 100px /
+        150px auto;}
+
+}
